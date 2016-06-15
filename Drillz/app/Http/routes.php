@@ -14,3 +14,15 @@
 $app->get('/', function () use ($app) {
     return view('index');
 });
+
+$app->get('/menu', function () use ($app) {
+    return view('menu');
+});
+
+$app->get('/menu/questions/', function () use ($app) {
+    return view('questions');
+});
+
+
+
+

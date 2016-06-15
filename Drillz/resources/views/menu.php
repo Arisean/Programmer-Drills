@@ -15,23 +15,36 @@
 </head>
 
 <body>
-    <div>
 <div class="fluid-container">
     <div class="row">
-        <h1 id="welcomeTitle">Programmer Drillz</h1>
+        <h1 id="MainMenu">Main Menu</h1>
     </div>
 </div>
 <div class="fluid-container">
     <div class="row">
-        <a href="/menu"><img id="welcomeImage" src="http://www.clker.com/cliparts/G/f/m/u/c/C/black-right-icon-md.png"></img></a>
+        <a href="/menu/questions#/regex"><button class="btn col-md-3" id="menuBtn">Regular Expression</button></a>
+        <button class="btn col-md-3" id="menuBtn">Strings</button>
+        <button class="btn col-md-3" id="menuBtn">Array</button>
     </div>
 </div>
+<div class="fluid-container">
+    <div class="row">
+        <button class="btn col-md-3" id="menuBtn">Regular Expression</button>
+        <button class="btn col-md-3" id="menuBtn">Strings</button>
+        <button class="btn col-md-3" id="menuBtn">Array</button>
     </div>
+</div>
+<div class="fluid-container">
+    <div class="row">
+        <button class="btn col-md-3" id="menuBtn">Regular Expression</button>
+        <button class="btn col-md-3" id="menuBtn">Strings</button>
+        <button class="btn col-md-3" id="menuBtn">Array</button>
+    </div>
+</div>
 
 </body>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
 
 
 </html>

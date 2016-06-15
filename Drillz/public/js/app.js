@@ -4,19 +4,29 @@ angular.module("app",[
     ]).
     config(function($routeProvider){
         $routeProvider
-        .when("/",
+        .when("/regex",
                 {
-                templateUrl: "angular-views/welcome.html",
-                controller: "MainCtrl"
+                    templateUrl: "angular-views/regex.html",
+                    controller: "QuestionCtrl"
                 }
         )
-        .when("/fake",
+        .when("/string",
                 {
-                  templateUrl: "resources/views/ae.html",
-                  controller: "MainCtrl"
+                    templateUrl: "angular-views/string.html",
+                    controller: "QuestionCtrl"
+                }
+        )
+        .when("/array",
+                {
+                    templateUrl: "angular-views/array.html",
+                    controller: "QuestionCtrl"
                 }
         );
+        
     }).
     controller("MainCtrl", ["$scope", function($scope) {
-        $scope.name = "Arisean";
+        $scope.drill= "Regex";
+    }]).
+    controller("QuestionCtrl", ["$scope", function($scope) {
+        $scope.question= "Random Question";
     }]);

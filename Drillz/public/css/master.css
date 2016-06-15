@@ -1,0 +1,87 @@
+body {
+    
+}
+#welcomeImage {
+    display: block;
+    padding-top: 20px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+#welcomeTitle {
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 20px;
+    font-size: 60px;
+    font-family: julee, fantasy;
+}
+#drillTitle {
+    text-align: center;
+    padding-top: 5px;
+    font-size: 48px;
+    font-family: julee, fantasy;
+}
+#MainMenu {
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 20px;
+    font-size: 60px;
+    font-family: julee, fantasy;
+}
+#menuBtn {
+    padding: 20px;
+    margin: 75px;
+    color: white;
+    border-radius: 5px;
+    background-color: black;
+    font-family: julee, fantasy;
+    font-size: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#editor {
+    display: block;
+    margin-top: 5px;
+    margin-left: 500px;
+    border-radius: 5px;
+    width: 50%;
+    height: 300px;
+}
+#question {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: julee, fantasy;
+}
+#output {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: julee, fantasy;
+}
+.questionBtn {
+    display: block;
+    margin-top: 10px;
+    width: 150px;
+    height: 30px;
+    border-radius: 8px;
+    color: white;
+    
+}
+#nextQuestion {
+    float: right;
+    margin-right: 50px;
+    background-color: blue;
+    font-family: julee, fantasy;
+}
+#previousQuestion {
+    margin-left: 500px;
+    background-color: red;
+    font-family: julee, fantasy;
+}
+#submitQuestion {
+    float: right;
+    margin-right: 475px;
+    background-color: green;
+    font-family: julee, fantasy;
+}
+
+
