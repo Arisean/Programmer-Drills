@@ -1,31 +1,45 @@
+@font-face {
+    font-family: '28Days';
+    src: url(fonts/28Days.ttf);
+}
+@font-face {
+    font-family: 'holojacket';
+    src: url(fonts/holojacket.ttf);
+}
+
 body {
     
 }
 #welcomeImage {
     display: block;
-    padding-top: 20px;
+    padding-top: 10px;
     margin-left: auto !important;
     margin-right: auto !important;
 }
 #welcomeTitle {
     text-align: center;
-    margin-top: 100px;
-    padding-top: 20px;
+    margin-top: 50px;
+    padding-top: 10px;
     font-size: 60px;
-    font-family: julee, fantasy;
+    font-family: "28Days";
 }
-#drillTitle {
+#welcomeSubTitle {
     text-align: center;
-    padding-top: 5px;
-    font-size: 48px;
-    font-family: julee, fantasy;
+    margin-top: 15px;
+    padding-top: 10px;
+    font-size: 30px;
+    font-family: "28Days";
+}
+#title {
+    text-align: center;
+    font-size: 40px;
+    font-family: "28Days";
 }
 #MainMenu {
     text-align: center;
-    margin-top: 100px;
-    padding-top: 20px;
+    margin-top: 25px;
     font-size: 60px;
-    font-family: julee, fantasy;
+    font-family: "28Days";
 }
 #menuBtn {
     padding: 20px;
@@ -40,21 +54,22 @@ body {
 #editor {
     display: block;
     margin-top: 5px;
-    margin-left: 500px;
+    margin-left: auto !important;
+    margin-right: auto !important;
     border-radius: 5px;
     width: 50%;
-    height: 300px;
+    height: 200px;
 }
 #question {
     text-align: center;
     margin-top: 10px;
-    font-size: 30px;
+    font-size: 20px;
     font-family: julee, fantasy;
 }
 #output {
     text-align: center;
     margin-top: 20px;
-    font-size: 30px;
+    font-size: 20px;
     font-family: julee, fantasy;
 }
 .questionBtn {
@@ -67,21 +82,30 @@ body {
     
 }
 #nextQuestion {
-    float: right;
-    margin-right: 50px;
+    display: inline-block;
+    position: relative;
+    margin-left: 315px;
+    margin-right: auto !important;
     background-color: blue;
     font-family: julee, fantasy;
 }
 #previousQuestion {
-    margin-left: 500px;
+    display: inline-block;
+    position: relative;
+    margin-left: 325px;
+    margin-right: auto !important;
     background-color: red;
     font-family: julee, fantasy;
 }
-#submitQuestion {
-    float: right;
-    margin-right: 475px;
+#execute {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
     background-color: green;
     font-family: julee, fantasy;
+}
+.well {
+    height: 75px !important;
 }
 
 

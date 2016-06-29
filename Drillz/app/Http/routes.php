@@ -10,18 +10,12 @@
 | and give it the Closure to call when that URI is requested.
 |
 */
-
+    
 $app->get('/', function () use ($app) {
     return view('index');
 });
 
-$app->get('/menu', function () use ($app) {
-    return view('menu');
-});
 
-$app->get('/menu/questions/', function () use ($app) {
-    return view('questions');
-});
 
 
 
