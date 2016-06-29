@@ -13,6 +13,9 @@ config(function($routeProvider){
         when('/menu/regular_expressions', {
             templateUrl: 'angular-views/questions.html'
         }).
+        when('/menu/strings', {
+            templateUrl: 'angular-views/questions.html'
+        }).
         
         otherwise({redirectTo : '/'}); 
 }).
@@ -21,8 +24,12 @@ controller("MainCtrl", function() {
     
 }).
 controller("TitleCtrl", ["$scope", function($scope) {
+
+    $scope.location = window.location;
+    $scope.string = String($scope.location);
+    $scope.title = $scope.string.replace("https://programmer-drills-arisean.c9users.io/#/menu/","");
+
     
-    $scope.title = "Here is the title of the drill";
 }]).
 controller("QuestionCtrl", ["$scope", function($scope) {
     

@@ -69,8 +69,6 @@
                         Hello World
                     </div>
                 </div>
-                <div ng-view>
-                </div>
             </div>
         </div>
 

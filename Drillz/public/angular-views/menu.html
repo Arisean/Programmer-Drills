@@ -21,9 +21,9 @@
     </div>
 </div>
 <div class="fluid-container">
-    <div class="row">
-        <a href="#/menu/regular_expressions/"><button class="btn col-md-3" id="menuBtn">Regular Expression</button></a>
-        <a href="/menu/strings/"><button class="btn col-md-3" id="menuBtn">Strings</button></a>
+    <div class="row" ng-controller="TitleCtrl">
+        <a href="#/menu/regular_expressions/"><button class="btn col-md-3" id="menuBtn1" ng-model="regular" ng-click="getName()">Regular Expression</button></a>
+        <a href="#/menu/strings/"><button class="btn col-md-3" id="menuBtn2" ng-click="getName()">Strings</button></a>
     </div>
 </div>
 
