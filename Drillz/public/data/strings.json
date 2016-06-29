@@ -1,0 +1,10 @@
+{"questions":[
+    {"question":"Write a PHP script to split the following string."},
+    {"question":"Write a PHP script to check if a string contains specific string."},
+    {"question":"Write a PHP script to convert the value of a PHP variable to string."},
+    {"question":"Write a PHP script to extract the file name from the following string."},
+    {"question":"Write a PHP script to extract the user name from the following email ID."},
+    {"question":"Write a PHP script to get the last three characters of a string."},
+    {"question":"Write a PHP script to format values in currency style."}
+    
+]}

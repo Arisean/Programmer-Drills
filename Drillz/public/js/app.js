@@ -28,12 +28,18 @@ controller("TitleCtrl", ["$scope", function($scope) {
     $scope.location = window.location;
     $scope.string = String($scope.location);
     $scope.title = $scope.string.replace("https://programmer-drills-arisean.c9users.io/#/menu/","");
-
     
 }]).
-controller("QuestionCtrl", ["$scope", function($scope) {
+controller("QuestionCtrl", ["$scope","$resource", function($scope,$resource) {
     
-    $scope.questions = "Here is where the random question will go???";
+        $scope.location = window.location;
+        $scope.string = String($scope.location);
+        $scope.name = $scope.string.replace("https://programmer-drills-arisean.c9users.io/#/menu/","");
+        
+        $scope.file = $resource("/data/" + $scope.name + ".json");
+        $scope.results = $scope.file.get();
+        $scope.questions = $scope.results;
+
 }]).
 controller("EditorCtrl",function() {
     

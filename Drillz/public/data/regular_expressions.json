@@ -1,0 +1,10 @@
+{"questions":[
+    {"question":"Write a PHP script that checks if a string contains another string."},
+    {"question":"Write a PHP script that removes the last word from a string."},
+    {"question":"Write a PHP script that removes the whitespaces from a string."},
+    {"question":"Write a PHP script to remove non numeric characters except comma and dot."},
+    {"question":"Write a PHP script to remove new lines (characters) from a string."},
+    {"question":"Write a PHP script to extract text (within parenthesis) from a string."},
+    {"question":"Write a PHP script to remove all characters from a string except a-z A-Z 0-9 or \" \"."}
+    
+]}
