@@ -15,8 +15,12 @@ $app->get('/', function () use ($app) {
     return view('index');
 });
 
+$app->post('/questions','SandboxController@run');
+$app->get('/questions','SandboxController@run');
 
-
+$app->get('/menu', function () use ($app) {
+    return view('questions');
+});
 
 
 

@@ -1,10 +1,12 @@
 <?php
+
 namespace App\Http\Controllers;
 
 
 
 use Laravel\Lumen\Routing\Controller as BaseController;
 use PHPSandbox;
+
 
 
 class SandboxController extends BaseController
@@ -18,7 +20,8 @@ class SandboxController extends BaseController
     public function __construct()
     {
         //
-    
+        
+
     }
 
     /**
@@ -28,7 +31,38 @@ class SandboxController extends BaseController
      */
      public function run()
      {
+        $request = file_get_contents("php://input");
+        $magic = rtrim($request, "\0");
+        $jsonDecode = json_decode($magic, TRUE);
+        $code = $jsonDecode['code'];
         
-        return view('index');
+        $sandbox = new \PHPSandbox\PHPSandbox();
+        $sandbox->setOption('allow_functions', true);
+        $sandbox->setOption('allow_variables', true);
+        $sandbox->setOption('allow_keywords', true);
+        $sandbox->setOption('allow_functions', true);
+        $sandbox->setOption('allow_objects', true);
+        $sandbox->setOption('allow_closures', true);
+        $sandbox->setOption('allow_classes', true);
+        $sandbox->setOption('allow_globals', true);
+        
+        $sandbox->prepend(function(){
+            
+                function test2(){
+                    $request = file_get_contents("php://input");
+                    $magic = rtrim($request, "\0");
+                    $jsonDecode = json_decode($magic, TRUE);
+                    $code = $jsonDecode['code'];
+                    return $code;
+
+                }
+            });
+        
+        $result = $sandbox->execute(function(){ 
+            return test2(); 
+            
+        });
+
+echo $result;
      }
 }

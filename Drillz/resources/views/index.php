@@ -17,6 +17,11 @@
 </head>
 
 <body>
+<div  class="fluid-container">
+    <div class="row">
+        <a href="#/" ng-hide="#/"><img id="exitImage" src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/black-paint-splatter-icons-media/001578-black-paint-splatter-icon-media-a-media31-back.png"></img></a>
+    </div>
+</div>
     <div>
         <div class="fluid-container">
             <div class="row">
@@ -24,7 +29,7 @@
             </div>
         </div>
         <div ng-view>
-
+            
         </div>
     </div>
 

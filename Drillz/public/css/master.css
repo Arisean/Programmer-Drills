@@ -1,3 +1,5 @@
+/*master css file*/
+
 @font-face {
     font-family: '28Days';
     src: url(fonts/28Days.ttf);
@@ -6,33 +8,37 @@
     font-family: 'holojacket';
     src: url(fonts/holojacket.ttf);
 }
-
-body {
-    
+@font-face {
+    font-family: 'djb';
+    src: url(fonts/DJB.ttf);
 }
+@font-face {
+    font-family: 'FlunkiesBB';
+    src: url(fonts/FlunkiesBB.otf);
+}
+
 #welcomeImage {
     display: block;
-    padding-top: 10px;
+    padding-top: 5px;
     margin-left: auto !important;
     margin-right: auto !important;
 }
 #welcomeTitle {
     text-align: center;
-    margin-top: 50px;
-    padding-top: 10px;
-    font-size: 60px;
+    margin-top: -10px;
+    font-size: 55px;
     font-family: "28Days";
 }
 #welcomeSubTitle {
     text-align: center;
-    margin-top: 15px;
     padding-top: 10px;
-    font-size: 30px;
+    font-size: 25px;
     font-family: "28Days";
 }
 #title {
     text-align: center;
-    font-size: 40px;
+    margin-top: -5px;
+    font-size: 45px;
     font-family: "28Days";
 }
 #MainMenu {
@@ -42,8 +48,11 @@ body {
     font-family: "28Days";
 }
 #menuBtn {
-    padding: 20px;
-    margin: 75px;
+
+    display: inline-block;
+    padding:10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
     color: white;
     border-radius: 5px;
     background-color: black;
@@ -53,24 +62,30 @@ body {
 }
 #editor {
     display: block;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-left: auto !important;
     margin-right: auto !important;
     border-radius: 5px;
-    width: 50%;
+    width: 65%;
     height: 200px;
 }
 #question {
     text-align: center;
     margin-top: 10px;
-    font-size: 20px;
-    font-family: julee, fantasy;
+    font-size: 25px;
+    font-family: "FlunkiesBB";
+
 }
 #output {
+    display: inline-block;
     text-align: center;
-    margin-top: 20px;
     font-size: 20px;
-    font-family: julee, fantasy;
+    font-family: "FlunkiesBB"
+}
+#outputId {
+    text-align: center;
+    font-size: 15px;
+    font-family: "FlunkiesBB"
 }
 .questionBtn {
     display: block;
@@ -82,30 +97,30 @@ body {
     
 }
 #nextQuestion {
-    display: inline-block;
-    position: relative;
-    margin-left: 315px;
+    display: block;
+    margin-left: auto !important;
     margin-right: auto !important;
-    background-color: blue;
+    background-color: #000080;
     font-family: julee, fantasy;
-}
-#previousQuestion {
-    display: inline-block;
-    position: relative;
-    margin-left: 325px;
-    margin-right: auto !important;
-    background-color: red;
-    font-family: julee, fantasy;
+    font-size: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
 }
 #execute {
     display: block;
     margin-left: auto !important;
     margin-right: auto !important;
-    background-color: green;
+    background-color: #990000;
     font-family: julee, fantasy;
+    font-size: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .well {
-    height: 75px !important;
+    height: 125px !important;
 }
-
-
+#exitImage {
+    width:10%;
+    height: 10%;
+    margin-left: 25px;
+    margin-bottom: -5px;
+}
