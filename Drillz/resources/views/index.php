@@ -19,7 +19,8 @@
 <body>
 <div  class="fluid-container">
     <div class="row">
-        <a href="#/" ng-hide="#/"><img id="exitImage" src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/black-paint-splatter-icons-media/001578-black-paint-splatter-icon-media-a-media31-back.png"></img></a>
+        <a href="#/" ng-hide="#/"><img id="homeImage" src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/black-paint-splatter-icons-business/077801-black-paint-splatter-icon-business-home4.png"></img></a>
+        <a href="#/menu" ng-hide="#/"><img id="exitImage" src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/black-paint-splatter-icons-media/001578-black-paint-splatter-icon-media-a-media31-back.png"></img></a>
     </div>
 </div>
     <div>

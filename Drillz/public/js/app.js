@@ -99,7 +99,7 @@ controller("EditorCtrl",["$scope","$http",function($scope,$http) {
     var editor = ace.edit("editor");
     editor.setTheme("ace/theme/twilight");
     editor.session.setMode("ace/mode/php");
-    editor.session.setValue("<?php echo \'Arisean\;'");
+    editor.session.setValue("<?php\n");
     
     
     
@@ -109,8 +109,7 @@ controller("EditorCtrl",["$scope","$http",function($scope,$http) {
                                 method: "post",
                                 url: "/questions",
                                 data: { 
-                                    code : value
- 
+                                        code : value
                                       }
                             });
                             // Store the data-dump of the FORM scope.
